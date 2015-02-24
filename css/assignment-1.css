@@ -1,0 +1,86 @@
+/* CSS Reset */
+/* --------------------------------------------------------------- */
+html, body, div, p, a, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+/* --------------------------------------------------------------- */
+
+
+/* General */
+/* --------------------------------------------------------------- */
+body {
+	font-family: Arial;
+	color: #3d53ff;
+}
+
+#container {
+    width:      80%;
+    margin:     auto;
+    position:   relative;
+}
+
+#header {
+    width: 100%;
+    border-bottom: 1px solid #3d53ff;
+    padding: 10px 0px;
+    overflow: auto;
+    position: relative;
+}
+
+/*
+div {
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+*/
+
+#header-text {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#header-text div {
+	width: 33.33333%;
+	text-align: center;
+	float: left;
+}
+
+#header-img-left {
+	display: inline-block;
+}
+
+#header-img-right {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#content {
+	padding: 20px 0px;
+}
+
+#footer {
+	padding-top: 20px;
+	text-align: center;
+	border-top: 1px solid #3d53ff;
+}
+
+#footer p {
+	font-size: 75%;
+}
