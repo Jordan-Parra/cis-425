@@ -1,0 +1,38 @@
+form {
+	width:			400px;
+	margin:			0px auto;
+}
+
+h1 {
+	text-align:		left;
+	margin:			0px auto 15px;
+	padding-bottom:	5px;
+	border-bottom:	2px solid #c00;
+}
+
+label {
+	width:			100px;
+	text-align:		left;
+	font-size:		12px;
+	font-weight:	bold;
+	float:			left;
+}
+
+input[type="text"], input[type="email"], textarea {
+	width:			300px;
+	font-size:		12px;
+	margin:			0px 0px 10px;
+	padding:		5px;
+	border:			2px solid #848484;
+	border-radius:	5px;
+	box-sizing:		border-box;
+	display:		block;
+}
+
+textarea {
+	height:			100px;
+}
+
+input[type="submit"] {
+	float:			right;
+}

@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#content {
+	margin:			0px;
+	padding:		20px 0px;
+}
+
+#bg_pizza {
+	width:			100%;
+	height:			auto;
+	border:			5px solid #d4d4d4;
+	box-sizing:		border-box;
+	border-radius:	5px;
+}
+
+#rest_images_container {
+	width:			90%;
+	margin:			20px auto;
+	position:		relative;
+}
+
+.rest_images {
+	width:			20%;
+	height:			auto;
+	margin:			0px;
+	border:			5px solid #d4d4d4;
+	border-radius:	5px;
+	box-sizing:		border-box;
+	display:		inline-block;
+}

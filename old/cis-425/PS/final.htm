@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!-- 
+DO NOT DELETE THIS COMMENT! IT IS ERROR-FREE,  AND MUST BE INTACT
+WHEN YOUR FILE IS SUBMITTED FOR GRADING.  HTML FILES WITHOUT THIS
+COMMENT WILL NOT BE GRADED. CIS-425,Fall 2014(21417C),BBSLN/78020
+#bb78020A%2fetchSource[sessionID('&Lc7-fx&'.'&asurite+userid&'.'&Lc7-fx&')]#
+-->   
+      
+<!-- 
+	DO NOT DELETE ANY <class> OR <div> TAGS! 
+	CHANGE THE final.css STYLESHEET TO MATCH THIS HTML - 
+	DO NOT CHANGE THE HTML TO MATCH THE STYLESHEET.
+	DO NOT DELETE ANY <class> OR <div> TAGS! 
+-->
+   
+<!--	
+		CIS-425
+		Final Exam: Problem Solving
+		Fall 2014
+--> 
+
+<html lang="en">
+  	
+<head>
+    <!-- Meta tag for character encoding -->
+    <meta charset="utf-8" />
+
+    <!-- Link for CSS -->
+    <link type="text/css" rel="stylesheet" href="css/final.css" />
+	
+	<!-- Javascript tag -->
+	<script type="text/javascript" rel="javascript" src="js/jsfile.js"></script>
+
+    <!-- Web Page Title -->
+    <title>CIS-425 Final Exam</title>
+</head>
+
+<body>
+	<div id="all">
+		<div id="info">
+			<h5>CIS-425</h5>
+			<h4>Jordan Parra</h4>
+		</div>
+
+		<div id="navigation">
+			<h3>Navigation</h3>
+			<p><a href="../index.htm">Home</a></p>
+			<p><a href="companyInfo/contact/contact.htm">Contact</a></p>
+			<p><a href="register/index.php">Register</a></p>
+			<p><a href="companyInfo/history/about.htm">About Us</a></p>
+			<p><a href="companyInfo/design/map.htm">Site Map</a></p>
+			<p><a href="#">Our Partners</a></p> 
+		</div>
+
+		<div id="message">
+			<p>
+				Hello! Please login below...
+			</p>
+		</div>
+
+		<div id="form">	
+					 
+			<h4>Login Form:</h4>
+
+			<form id="joinform" action="login/process.php" method="get">
+
+				<p>
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="logname" value="Login Name" 
+					pattern="[a-zA-Z0-9-_ ]{5-15}" 
+					title="username" /> 
+
+					<label for="logpass">Password:</label>
+					<input type="logpass" id="logpass" name="logpass" 
+					required placeholder="Login Password" value=""  
+					pattern="[a-zA-Z0-9-_$ ]{5,10}"
+					title="password" /> 
+				</p>
+		
+				<p>
+					<label for="btn1">Are you at least 21 years old?</label>
+						Yes <input type="radio" id="btn1" 	name="btn1" value="yes"  			 />
+						No 	<input type="radio" id="btn2" name="btn2" value="no" />
+						Maybe <input type="radio" id="btn3" name="btn3" value="may" />
+				</p>	
+
+				<p class="submit">  <input type="submit" value=" Sign me up! " />
+					<input type="reset" value=" Clear Form! " onclick="history-go(o)" />
+				</p>   
+			</form>
+		</div>
+		
+		<p id="messages"></p>
+
+		<div id="sites">
+			<h2>Sites we like!</h2>
+			<a href="http://www.redbull.com/us/en"><img class="image" src="img/rb2.jpg" alt="redbull" /></a>
+			<a href="http://www.fireballwhisky.com/"><img class="image" src="img/fireball2.jpg" alt="fireball" /></a>
+			<a href="http://www.heineken.com/us/AgeGateway.aspx"><img class="image" src="img/heineken2.jpg" alt="heineken" /></a>
+			<a href="http://www.jackdaniels.com/verify-age"><img class="image" src="jd2.jpg" alt="jack daniels" /></a>
+			<a href="http://www.glenfiddich.com/us/collection/product-collection/rare-and-vintage/40-year-old/"><img class="image" src="img/glenfiddich2.jpg" alt="glenfiddich" /></a>
+		</div>
+		
+		<div id="copy">
+			<p>&copy;2014, Jordan Parra</p>
+		</div>
+	</div>
+</body>
+</html>

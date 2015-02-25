@@ -1,0 +1,123 @@
+/* 
+DO NOT DELETE THIS COMMENT! IT IS ERROR-FREE,  AND MUST BE INTACT
+WHEN YOUR FILE IS SUBMITTED FOR GRADING.  CSS FILES WITHOUT THIS
+COMMENT WILL NOT BE GRADED. CIS-425,Fall 2014(21417C),BBSLN/78020
+#bb78020BA%2fetchSource[sessionID('&Lc7-fx&'.'&asurite+userid&'.'&Lc7-fx&')]#
+*/  
+
+h1 {
+	color: green; 
+	font-size: 120%;
+}
+
+body {
+	background-color: #eeeeee;
+	font-family: Verdana;'
+}
+
+#navigation p {
+	display: inline-block;
+}
+
+#sites {
+	background-color: #eeeeee;
+	color:#0000ff;
+	font-size:	75%;
+	text-align:	center;
+	border-top:	thin solid #0000ff;
+	margin:	50px 0px 0px 0px;
+	clear:left; 
+}
+
+.info {
+	border-bottom: thin solid #0000ff;
+	margin:	0px 0px 5px 0px;
+	text-align: center;
+	height:	80px;
+	clear: both;
+}
+
+.navgation {
+	width: 155px;
+	border-right: thin solid #0000ff;
+	float: left;
+	padding:0px 0px 10px 5px;
+	margin:	0px 0px 5px 0px;
+	line-height: 1.5em;
+}
+
+#message {
+	border: none;
+	margin:	0px 170px 5px 170px;
+	padding:4px 5px 0px 5px;
+	text-align:center;
+	font-weight: bold;
+}
+
+#form {
+	border: thin solid #0000ff;
+	margin: auto;
+	padding-left: 10px;
+	color:#119911;
+	width: 50%;
+}
+
+#sites image {
+	width:	125px;
+	height:	175px;
+}
+
+#messages {			
+	font-size: 75%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+label	{
+	width: 4em;	
+	text-align:	left;
+	margin-right: 0.5em;
+	margin-left: 1em;
+}
+
+.sumbit {
+	text-align:	center;
+}
+
+.sumbit input 	{ 
+	background-color: green;
+	color:	#ffffff;
+	font-style:	italic;
+	font-weight: bold;
+}
+
+.reset input 	{ 
+	background-color: red;
+	color: #ffffff;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.form header 	{ 
+	text-decoration: underline;
+}
+
+h3 { 
+	color: black; 
+	font-size: 100%;
+}
+
+h4 { 
+	color: green; 
+	font-size: 95%;
+}	
+
+h5 { 
+	color: blue; 
+	font-size: 90%;
+}
+
+.image {
+	width:	200px;
+	height:	auto;
+}

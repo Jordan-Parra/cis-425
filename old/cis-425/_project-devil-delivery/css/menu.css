@@ -1,0 +1,101 @@
+.image {
+	width:				125px;
+	height:				auto;
+	/* vertical-align:		middle; */
+	border-right:		2px solid #444;
+	padding:			0px 5px;
+	margin:				0px;
+	float:				left;
+}
+
+.back_button {
+	float:				left;
+	margin-bottom:		20px;
+}
+
+#content_wrapper {
+	width:				90%;
+	min-width:			675px;
+	margin:				auto;
+	position:			relative;
+}
+
+.top_container {
+	width:						100%;
+	/* min-width:			675px; */
+	/* height:				125px; */
+	/* margin-bottom:		20px; */
+	border:						5px solid #CC5C00;
+	/* border-bottom:				5px solid #c00; */
+	/* border-bottom-color:	#c66; */
+	border-top-left-radius:		5px;
+	border-top-right-radius:	5px;
+	box-sizing:					border-box;
+	overflow:					auto;
+	display:					table;
+	clear:						left;
+}
+
+table {
+	width:						100%;
+	height:						100px;
+	margin:						0px;
+	border:						5px solid #c00;
+	border-top:					none;
+	border-collapse:			collapse;
+	border-bottom-left-radius:	5px;
+	border-bottom-right-radius:	5px;
+	box-sizing:					border-box;
+}
+
+tr, td {
+	border: 1px solid #949494;
+	padding: 10px;
+	/* border-collapse:	collapse; */
+}
+
+.top_container h1 {
+	text-align:			left;
+	padding:			20px;
+	/* margin-left:		137px; */
+	/* display:			table-cell; */
+	/* vertical-align:		middle; */
+}
+
+.va_container0 {
+	height:				125px;
+	margin-left:		137px;
+}
+
+.cart_button{
+	width:				150px;
+	margin:				auto;
+	display:			block;
+}
+
+.bold {
+	font-weight:		bold;
+}
+
+.left_align {
+	text-align:			left;
+}
+
+.right_align {
+	text-align:			right;
+}
+
+.center {
+	text-align:			center;
+}
+
+.description {
+	font-size:			12px;
+	font-style:			italic;
+	vertical-align:		middle;
+}
+
+.cart_cell {
+	width:				200px;
+	text-align:			center;
+}

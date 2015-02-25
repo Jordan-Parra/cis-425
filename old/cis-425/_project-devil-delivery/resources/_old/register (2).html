@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- 
+Project - Devil Delivery Regisitration Page
+CIS 425
+Fall 2014
+Jordan Parra
+-->
+
+<html lang="en">
+	<head>
+		<!-- Character Encoding -->
+		<meta charset="utf-8" />
+		
+		<!-- Web Page Title -->
+		<title>Registration</title>
+		
+		<!-- Stylesheet -->
+		<link type="text/css" rel="stylesheet" href="../css/main.css" />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:800">
+		
+		<!-- Favicon -->
+		<link type="image/x-icon" rel="shortcut icon" href="../img/dd_favicon.ico" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- Logo -->
+			<a href="../index.html">
+				<img id="logo" src="../img/dd_logo.png" alt="Devil Delivery Logo" />
+			</a>
+		
+			<!-- Login/Signup -->
+			<a class="login_signup_links" href="login.php">Login</a>
+			<a class="login_signup_links" href="signup.php">Sign Up</a>
+		</header>
+
+		<!-- Content -->
+		<div id="content">
+			<!-- Registration Form -->
+			<form id="registration_form" action="confirm.php" method="get">
+				<!-- Registration Heading -->
+				<div>
+					<h1 class="heading">Register with Devil Delivery for Easy (Re-)Ordering</h1>
+					<p class="shrink_text">Already a member? Login <a href="login.php">here</a></p>
+				</div>
+				<!-- Login Information -->
+				<div>
+					<h2 class="heading">Login Information</h2>
+					<!-- Email -->
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"
+					required 
+					autofocus
+					maxlength="50" />
+					<!-- Confirm Email -->
+					<label for="cfm_email">Confirm Email:</label>
+					<input type="email" id="cfm_email" name="cfm_email"
+					required
+					maxlength="50" />
+					<!-- onkeyup="confirm_email_match(); return false;" /> -->
+					<!-- Password -->
+					
+					<!-- Confirm Password -->
+					
+				<div>
+				<!-- Contact Information -->
+				<div>
+					<h2 class="heading">Contact Information</h2>
+					<label for="f_name">First Name:</label>
+					<input type="text" id="f_name" name="f_name"
+					required
+					pattern="[a-zA-Z- ]{4,30}" />
+				</div>
+				<!-- Delivery Information -->
+				<div>
+					<h2 class="heading">Delivery Information</h2>
+				</div>
+			</form>
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+		
+		</footer>
+	</body>
+</html>

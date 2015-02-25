@@ -1,0 +1,142 @@
+html, body, header, footer, nav, div, p, a, img, ul, li, form, label, input, select{
+	margin: 			0px;
+	padding: 			0px;
+	border: 			0px;
+	font-size: 			100%;
+	font: 				inherit;
+	vertical-align: 	baseline;
+}
+
+html {
+	background-color:	lightgray;
+}
+
+body {
+	width:				90%;
+	min-width:			700px;	
+	min-height:			400px;
+	font-family:		Arial, sans-serif;
+	margin:				20px auto;
+	position:			relative;
+}
+
+header {
+	background-color:	gray;
+	color:				white;
+	font-weight:		bold;
+	position:			relative;
+	overflow:			auto;
+}
+
+.header-left {
+	width:				20%;
+	float:				left;
+}
+
+.header-center {
+	width:				60%;
+	text-align:			center;
+	padding-top:		40px;
+	position:			relative;
+	float:				left;
+}
+
+.header-right {
+	width:				20%;
+	text-align:			right;
+	float:				right;
+}
+
+nav {
+	margin:				15px 0px;
+	overflow:			auto;
+}
+
+nav ul {
+
+}
+
+nav ul li {
+	background-color:	white;
+	width:				16.66666%;
+	text-align:			center;
+	text-decoration:	none;
+	list-style:			none;
+	padding:			3px;
+	border:				2px solid blue;
+	box-sizing:			border-box;
+	float:				left;
+}
+
+#content {
+
+}
+
+form {
+	background-color:	gray;
+	color:				white;
+	margin:				15px 0px;
+	text-align:			center;
+	padding:			30px;
+}
+
+form div {
+	margin:				30px auto;
+}
+
+form div span {
+	margin:				auto 10px;
+}
+
+label {
+	width:				150px;
+	font-weight:		bold;
+}
+
+input {
+	width:				150px;
+	
+}
+
+#messages {
+	background-color:	white;
+	text-align:			center;
+	color:				blue;
+	margin:				15px 0px;
+	padding:			10px;
+	border:				2px solid blue;
+	box-sizing:			border-box;
+}
+
+#sponsors {
+	background-color:	gray;
+	color:				white;
+	font-weight:		bold;
+	text-align:			center;
+	padding:			15px;
+	margin:				15px 0px;
+	border:				2px solid blue;
+	box-sizing:			border-box;
+	position:			relative;
+}
+
+#sponsors p {
+	margin-bottom:		20px;
+}
+
+#sponsor-imgs-container {
+/* 	width:				90%;
+	margin:				auto; */
+}
+
+#sponsor-imgs-container img {
+	width:				125px;
+	height:				125px;
+}
+
+footer {
+	text-align:			center;
+	padding:			15px;
+	margin:				15px 0px;
+	border-top:			2px solid blue;
+}

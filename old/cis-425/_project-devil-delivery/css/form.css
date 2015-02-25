@@ -1,0 +1,79 @@
+/* CSS Document (Forms)*/
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.container {
+	text-align:			center;
+	margin-bottom:		30px;
+}
+
+#main_heading_wrapper {
+	display:			inline-block;
+}
+
+#main_heading_wrapper h1 {
+	margin-bottom:		10px;
+}
+
+#registration_form {
+	width:				509px;
+	margin:				0px auto;
+	overflow:			auto;
+}
+
+#registration_form h2 {
+	width:				503px;
+	margin-bottom:		10px;
+	border-bottom:		2px double #c00; 
+}
+
+label {
+	font-size:			12px;
+	width: 				150px;
+	margin-bottom:		6px;
+	display:			inline-block;
+}
+
+.long_label {
+	width:				auto;
+	font-weight:		bold;
+}
+
+input {
+	font-size:			12px;
+	margin-bottom:		6px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width:				350px;
+	height:				30px;
+	padding:			5px;
+	box-sizing:			border-box;
+	border:				2px solid #848484;
+	border-radius:		5px;
+	display:			inline-block;
+}
+
+select {
+	font-size:			12px;
+	height:				30px;
+	margin-bottom:		6px;
+	box-sizing:			border-box;
+	border: 			2px solid #848484;
+	border-radius:		5px;
+}
+
+#checkbox_wrapper {
+	margin-top:			20px;
+}
+
+#submit_button_wrapper {
+	text-align:			center;
+	margin-top:			20px;
+}
+
+input[type="submit"] {
+	font-size:			16px;
+	width:				100px;
+	border-radius:		5px;
+	float:				right;
+}

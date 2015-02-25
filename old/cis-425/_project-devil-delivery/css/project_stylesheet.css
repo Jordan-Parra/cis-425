@@ -1,0 +1,102 @@
+/* CSS Document */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Reset */
+html, body, header, nav, footer, div, p, a, img, ul, li, form, label{
+	margin: 			0px;
+	padding: 			0px;
+	border: 			0px;
+	font-size: 			100%;
+	font: 				inherit;
+	vertical-align: 	baseline;
+}
+
+/* Import the Chunkfive font */
+@font-face { 
+	font-family: 		Chunkfive;
+	src:				url('../fonts/ChunkFive/Chunkfive.otf');
+}
+
+body {
+	/* background-color:	#FFFFE5; */
+	font-family:		Arial, sans-serif;
+	width:				80%;
+	margin:				auto;
+}
+
+header {
+	padding:			5px 0px;
+	border-bottom:		2px solid rgb(204, 0, 0);
+	overflow:			auto;
+}
+
+/* This is a temporary logo until I figure out how to customize the logo further */
+#logo {
+	width:				30%;
+	height:				auto;
+}
+
+/* The Logo Container contains #dd_logo and #dd_name */
+#logo_and_name_container {
+	width:				50%;
+	box-sizing:			border-box;
+	border:				10px solid black;
+	/* display:			table; */
+	float:				left;
+	overflow: 			auto;
+}
+
+#logo_container {
+	float:				left;
+}
+
+#dd_logo {
+	width:				100px;
+	height:				auto;
+	margin-right:		5px;
+}
+
+#name_container {
+	/* display:			table; */
+	position:			relative;
+	top:				50%;
+	transform:			translateY(-50%);
+}
+
+#dd_name {
+	font-family:		Chunkfive, sans-serif;
+	/* display:			table-cell;
+	vertical-align:		middle; */
+	/* position:			relative;
+	top:				50%;
+	transform:			translateY(-50%); */
+}
+
+/* This is a temporary example */
+#example {
+	font-family:		Chunkfive, sans-serif;
+}
+
+.login_signup_links {
+	width:				10%;
+	background-color:	rgb(204, 0, 0);
+	color:				#FFFFFF;
+	font-weight:		bold;
+	text-align:			center;
+	text-decoration:	none;
+	padding:			5px;
+	margin-left:		5px;
+	border-radius:		10px;
+	float:				right;
+	/* vertical-align:		middle; */
+}
+
+.login_signup_links:hover {
+	/* width:				 */
+}
+
+a:link {}
+a:visited {}
+a:hover {}
+a:focus {}
+a:active {}

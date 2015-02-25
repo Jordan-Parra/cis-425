@@ -1,0 +1,85 @@
+/* CSS Document (Forms)*/
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#heading_wrapper {
+	text-align:			center;
+}
+
+#heading_wrapper h1 {
+	margin-bottom:		10px;
+}
+
+form {
+	width:				500px;
+	margin:				0px auto;
+	overflow:			auto;
+}
+ 
+form h2 {
+	width:				500px;
+	text-align:			left;
+	margin-bottom:		10px;
+	padding-bottom:		5px;
+	border-bottom:		2px double #c00; 
+}
+
+label, input {
+	font-size:			12px;
+	margin-bottom:		6px;
+}
+
+label {
+	width: 				150px;
+	text-align:			left;
+	margin-bottom:		6px;
+	float:				left;
+	clear:				left;
+}
+
+input {
+	box-sizing:			border-box;
+	display:			block;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width:				350px;
+	height:				30px;
+	padding:			5px;
+	box-sizing:			border-box;
+	border:				2px solid #848484;
+	border-radius:		5px;
+	display:			inline-block;
+}
+
+select {
+	font-size:			12px;
+	height:				30px;
+	margin-bottom:		6px;
+	box-sizing:			border-box;
+	border: 			2px solid #848484;
+	border-radius:		5px;
+	float:				left;
+}
+
+input[type="submit"], input[type="reset"] {
+	width:				125px;
+	font-size:			16px;
+	margin-top:			30px;
+	text-align:			center;
+	border-radius:		5px;
+}
+
+input[type="submit"] {
+	float:				right;
+	clear:				none;
+}
+
+input[type="reset"] {
+	float:				left;
+	clear:				none;
+}
+
+.long_label {
+	width:				auto;
+	font-weight:		bold;
+}

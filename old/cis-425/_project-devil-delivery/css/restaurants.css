@@ -1,0 +1,30 @@
+#content_wrapper {
+	width:			90%;
+	margin:			auto;
+}
+
+h1 {
+	text-align:		left;
+	padding-bottom:	15px;
+	border-bottom:	2px solid #c00;
+}
+
+table {
+	width:			100%;
+	text-align:		left;
+}
+
+td {
+	border:			5px solid #d4d4d4;
+	border-radius:	5px;
+}
+
+
+.image {
+	width:			125px;
+	height:			auto;
+}
+
+.menu_button {
+	margin:			auto;
+}

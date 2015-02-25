@@ -1,0 +1,13 @@
+/* CSS Document (Confirmation Page)*/
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.wide_button {
+	width:				200px;
+	margin:				20px;
+	display:			inline-block;
+	position:			relative;
+}
+
+.wide_button:active {
+	top:				0px;
+}

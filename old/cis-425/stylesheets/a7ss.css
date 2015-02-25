@@ -1,0 +1,204 @@
+html, body, header, nav, footer, div, p, a, img, ul, li, form, label{
+	margin: 			0px;
+	padding: 			0px;
+	border: 			0px;
+	font-size: 			100%;
+	font: 				inherit;
+	vertical-align: 	baseline;
+}
+
+body {
+	font-family: 		"Arial", sans serif;
+	color:				#0066FF;
+}
+
+header {
+	font-weight: 		bold;
+	text-align:			center;
+	border-bottom:		1px solid #0066FF;
+}
+
+#Jordan_Parra {
+	font-size:			120%;
+}
+
+ul {
+	list-style:			none;
+}
+
+p, li{
+	margin: 			15px 0 15px 0;
+}
+
+#container3, #container2, #container1 {
+	float: 				left;
+	width: 				100%;
+}
+
+#left_column {
+	float: 				left;
+	width: 				30%;
+}
+
+#center_column {
+	float: 				left;
+	width: 				40%;
+}
+
+#right_column {
+	float: 				left;
+	width: 				30%;
+}
+
+#internal_nav {
+	padding: 			0px 10px 0px 10px;
+}
+
+#internal_nav p {
+	font-weight: 		bold;
+}
+
+#welcome_message {
+	text-align: 		center;
+}
+
+#login_page_link {
+	font-size:			80%;
+	font-style:			italic;
+}
+
+.response_code {
+	text-align:			center;
+	font-size:			80%;
+	font-style:			italic;
+	color:				#AF3C36;
+}
+
+#form_descriptor {
+	font-weight: 		bold;
+	text-decoration: 	underline;
+}
+
+#form_message {
+	text-align:			center;
+	
+}
+
+form {
+	padding: 			10px 10px 20px 10px;
+	margin-bottom: 		10px;
+	border: 			1px solid #0066FF;
+	background-color: 	#DDEBFF;
+	border-radius: 		15px;
+	box-shadow: 		5px 5px 3px 3px rgba(25, 25, 75, .4);
+}
+
+form div {
+	margin-bottom: 		10px;
+}
+
+.label {
+	float: 				left;
+	width: 				250px;
+}
+
+select {
+	width: 				200px;
+	height: 			22px;
+	border-radius: 		10px;
+	background: 		#FFFFFF;
+}
+
+select:required { background: #FFF79F; }
+
+select:valid { background: #FFFFFF; }
+
+select:focus:invalid { background: #FFA49F; }
+
+textarea {
+	padding: 			3px;
+	width: 				95%;
+	border-radius: 		10px;
+	background: 		#fff no-repeat top right;
+}
+
+textarea:required { background-image: url('../images/required.png'); }
+
+textarea:valid { background-image: url('../images/valid.png'); }
+
+textarea:focus:invalid { background-image: url('../images/invalid.png'); }
+
+input[type=text], input[type=password], input[type=email] {
+	width: 				200px;
+	height: 			22px;
+	border-radius: 		10px;
+}
+
+input:not([type=submit]):not([type=checkbox]):not([type=reset]) {
+	background: 		#FFFFFF no-repeat top right;
+}
+
+input:not([type=submit]):not([type=checkbox]):required {
+	background-image: 	url('../images/required.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):valid {
+	background-image: 	url('../images/valid.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):focus:invalid {
+	background-image: 	url('../images/invalid.png');
+}
+
+#buttons {
+	text-align: 		center;
+	/* margin-top:			15px; */
+}
+
+.button {
+	font-weight: 		bold;
+	padding: 			3px;
+	background-color: 	#FFFFFF;
+	color: 				#0066FF;
+	border: 			1px solid #0066FF;
+	border-radius: 		10px;
+	box-shadow: 		2px 2px 0px 0px rgba(17, 238, 17, .4);
+}
+
+#external_nav {
+	padding: 			0px 10px 0px 10px;
+}
+
+#external_nav p {
+	font-weight: 		bold;
+	text-align: 		right;
+}
+
+#external_nav img {
+	height: 			35px;
+	width: 				75px;
+}
+
+#messages {
+	color: 				#AA3939;
+	text-align: 		center;
+	font-weight: 		bold;
+	font-style: 		italic;
+	margin-top: 		10px;
+}
+
+footer {
+	clear: 				both;
+	text-align:			center;
+	border-top:			1px solid #0066FF;
+	padding-top: 		10px;
+}
+
+footer img {
+	width: 				50px;
+	height: 			50px;
+}
+
+footer #copyright {
+	font-size: 			75%;
+}

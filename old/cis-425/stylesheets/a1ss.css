@@ -1,0 +1,111 @@
+body {
+	font-family: "Arial", sans-serif;
+	color: #0066FF;
+}
+
+#header {
+	margin: 0px 50px 0px 50px;
+}
+
+#header p span{
+	width: 33.33%;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#header p span.left {
+	text-align: left;
+}
+
+#header p span.middle {
+	text-align: center;
+}
+
+#header p span.right {
+	text-align: right;
+}
+
+#navbar {
+	margin: 0px 50px 0px 50px;
+	text-align: center;
+	clear: both;
+}
+
+#navbar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#navbar ul li {
+	width: 20%;
+	float: left;
+}
+
+#navbar ul li a {
+	display: block;
+	text-decoration: none;
+	background-color: #0066FF;
+	color: #FFFFFF;
+	border: thin solid #C0C0C0;
+}
+
+#navbar ul li ul {
+	display: none;
+	
+}
+
+#navbar ul li:hover ul {
+	/* margin: 0px 0px 0px 50px; */
+	display: block;
+	position: absolute;
+	width: 92%;
+}
+
+#navbar ul li:hover ul li {
+/* 	position: absolute; */
+	/* display: block;
+	width: 20%;
+	background-color: #DDEBFF;
+	color: #0066FF; */
+	display: block;
+	float: none;
+	/* width: 100%; */
+}
+
+#navbar ul li:hover ul li a {
+	background-color: #DDEBFF;
+	color: #0066FF;
+	border: thin solid #0066FF;
+	padding: 5px 0px 5px 0px;
+}
+
+#navbar ul li ul a:hover {
+	text-decoration: underline;
+}
+
+#navbar ul li a:hover {
+	text-decoration: underline;
+}
+
+#astronaut {
+	width: 50%;
+	height: auto;
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	text-align: center;
+}
+
+#footer {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	border-top: 1px solid #0066FF;
+	padding-top: 10px;
+}

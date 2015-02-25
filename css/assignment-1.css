@@ -1,5 +1,4 @@
 /* CSS Reset */
-/* --------------------------------------------------------------- */
 html, body, div, p, a, img, ul, li {
 	margin: 0;
 	padding: 0;
@@ -9,6 +8,7 @@ html, body, div, p, a, img, ul, li {
 	vertical-align: baseline;
 }
 
+/*General Styles*/
 body {
 	line-height: 1;
 }
@@ -16,14 +16,10 @@ body {
 ol, ul {
 	list-style: none;
 }
-/* --------------------------------------------------------------- */
 
-
-/* General */
-/* --------------------------------------------------------------- */
 body {
 	font-family: Arial;
-	color: #3d53ff;
+	color: #007FFF;
 }
 
 #container {
@@ -32,20 +28,14 @@ body {
     position:   relative;
 }
 
+/*Header Styles*/
 #header {
     width: 100%;
-    border-bottom: 1px solid #3d53ff;
+    border-bottom: 1px solid #007FFF;
     padding: 10px 0px;
     overflow: auto;
     position: relative;
 }
-
-/*
-div {
-	box-sizing: border-box;
-	border: 1px solid black;
-}
-*/
 
 #header-text {
 	width: 100%;
@@ -68,19 +58,55 @@ div {
 	display: inline-block;
 	position: absolute;
 	right: 0px;
-	top: 0px;
+	top: 10px;
 }
 
+/*Content Styles*/
 #content {
 	padding: 20px 0px;
 }
 
+table {
+	width: 100%;
+	margin: 30px 0px;
+	background-color: #F5F5F5;
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+th, td {
+	border: 1px solid #007FFF;
+	padding: 5px;
+}
+
+td {
+	color: #2E14FC;
+	font-weight: bold;
+}
+
+#content img {
+	margin: 50px 75px;
+}
+
+/*Footer Styles*/
 #footer {
 	padding-top: 20px;
 	text-align: center;
-	border-top: 1px solid #3d53ff;
+	border-top: 1px solid #007FFF;
+	line-height: 150%;
 }
 
 #footer p {
 	font-size: 75%;
+}
+
+/*Misc Styles*/
+/*.test-border {
+	box-sizing: border-box;
+	border: 1px solid black;
+}*/
+
+.center {
+	text-align: center;
 }
