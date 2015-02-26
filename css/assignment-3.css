@@ -1,0 +1,145 @@
+html, body, div, span, p, a, img, ul, li, fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: "Arial", sans serif;
+	color: #0066FF;
+}
+
+p, li{
+	margin: 15px 0 15px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+form {
+	padding: 10px 10px 20px 10px;
+	margin-bottom: 10px;
+	border: 1px solid #0066FF;
+	background-color: #DDEBFF;
+}
+
+form div {
+	margin-bottom: 10px;
+}
+
+.title {
+	float: left;
+	width: 250px;
+}
+
+textarea {
+	width: 90%;
+	height: 100px;
+}
+
+#header {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #0066FF;
+}
+
+#container3 {
+	float: left;
+	width: 100%;
+	/* background-color: #336600; */
+	/* overflow: hidden; */
+	/* position: relative; */
+}
+
+#container2 {
+	float: left;
+	width: 100%;
+	/* background-color: #CCCC00; */
+	/* position: relative;*/
+	/* right: 30%; */ 
+}
+
+#container1 {
+	float: left;
+	width: 100%;
+	/* background-color: #990000; */
+	/* position: relative; */
+	/* right: 40%; */
+}
+
+#left-column {
+	float: left;
+	width: 30%;
+	/* position: relative; */
+	/* left: 72%; */
+	/* overflow: hidden; */
+}
+
+#center-column {
+	float: left;
+	width: 40%;
+	/* position: relative; */
+	/* left: 76%; */
+	/* overflow: hidden; */
+}
+
+#right-column {
+	float: right;
+	width: 30%;
+	/* position: relative; */
+	/* left: 80%; */
+	/* overflow: hidden; */
+}
+
+#int-nav-panel {
+	padding: 0px 10px 0px 10px;
+}
+
+#int-nav-panel p {
+	font-weight: bold;
+}
+
+#int-nav-panel li {
+
+}
+
+#welcome-message {
+	text-align: center;
+}
+
+#form-title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#buttons {
+	text-align: center;
+	padding-top: 5px;
+}
+
+#ext-nav-panel {
+	padding: 0px 10px 0px 10px;
+}
+
+#ext-nav-panel p {
+	font-weight: bold;
+	text-align: right;
+}
+
+#ext-nav-panel img {
+	height: 35px;
+	width: 75px;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+	border-top: 1px solid #0066FF;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+

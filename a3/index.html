@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+	Jordan Parra
+	Assignment 3
+	CIS-425
+	Fall 2014
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!-- Meta tag -->
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		
+		<!-- CSS -->
+		<link type="text/css" rel="stylesheet" href="../css/assignment-3.css" />
+		
+		<!-- Script -->
+		<script type="text/javascript" src="../jscode/a3giveFocus.js"></script>
+		<script type="text/javascript" src="../jscode/a3validation.js"></script>
+		
+		<!-- Web Page Title -->
+		<title>Assignment 3</title>
+	</head>
+	<body onload="giveFocus();">
+		<!-- Header -->
+		<div id="header">
+			<p>Jordan Parra</p>
+			<p>A3</p>
+		</div>
+		<!-- Content -->
+		<div id="container3">
+			<div id="container2">
+				<div id="container1">
+					<div id="left-column">
+						<!-- Internal Navigation Panel -->
+						<div id="int-nav-panel">
+							<p>Site Navigation</p>
+							<ul>
+								<li><a href="../index.htm">Home</a></li>
+								<li><a href="../a2/index.htm">A2</a></li>
+								<li><a href="index.htm">A3</a></li>
+								<li><a href="../a4/index.htm">A4</a></li>
+								<li><a href="../a5/index.htm">A5</a></li>
+								<li><a href="../a6/index.htm">A6</a></li>
+								<li><a href="../a7/index.htm">A7</a></li>
+								<li><a href="../a8/index.htm">A8</a></li>
+								<li><a href="../a9/index.htm">A9</a></li>
+								<li><a href="../_project-devil-delivery/index.php">Project</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="center-column">
+						<!-- Welcome Message -->
+						<div id="welcome-message">
+							<p>Please sign up below to join my CIS-425 study group</p>
+							<p>Your personal information will be treated with respect</p>
+						</div>
+						<!-- Form -->
+						<form id="regForm" action="../confirm.htm" method="post" onsubmit="return checkForm(this);">
+							<p id="form-title">Sign-up Form: </p>
+							<div>
+								<label for="name" class="title">Name:</label>
+								<input type="text" id="name" name="name" />
+							</div>
+							<div>
+								<label for="username" class="title">Username:</label>
+								<input type="text" id="username" name="username" />
+							</div>
+							<div>
+								<label for="password" class="title">Password:</label>
+								<input type="password" id="password" name="password" />
+							</div>
+							<div>
+								<label for="re_password" class="title">Re-enter Password:</label>
+								<input type="password" id="re_password" name="re_password" />
+							</div>
+							<div>
+								<label for="email" class="title">Email Address:</label>
+								<input type="text" id="email" name="email" />
+							</div>
+							<div>
+								<label for="probation" class="title">Academic Probation?</label>
+								<input type="checkbox" id="probation" name="probation" value="true" />
+							</div>
+							<div>
+								<span class="title">Hot or Not?</span>
+								<label><input type="radio" name="hot" value="true" /> Yes</label>
+								<label><input type="radio" name="hot" value="false" /> No</label>
+							</div>
+							<div>
+								<span class="title">Smart or Not?</span>
+								<label><input type="radio" name="smart" value="true" /> Yes</label> 
+								<label><input type="radio" name="smart" value="false" /> No</label> 
+							</div>
+							<div>
+								<span class="title">Favorite Beer:</span> 
+								<select name="beer">
+									<option value="blue-moon">Blue Moon</option>
+									<option value="shock-top">Shock Top</option>
+									<option value="kilt-lifter">Kilt Lifter</option>
+								</select>
+							</div>
+							<p>Why should I consider you for my study group?</p>
+							<div>
+								<textarea name="response" rows="10" cols="50"></textarea>
+							</div>
+							<div id="buttons">
+								<button type="submit">Sign me up!</button>
+								<button type="reset" onclick="giveFocus();">Clear the form!</button>
+							</div>
+						</form>
+					</div>
+					<div id="right-column">
+						<!-- External Navigation Panel -->
+						<div id="ext-nav-panel">
+							<p>External Links</p>
+							<p><a href="http://8tracks.com/">8tracks</a></p>
+							<p><a href="https://www.spotify.com/us/"><img src="../img/spotify-logo.jpg" alt="spotify" /></a></p>
+							<p><a href="http://www.last.fm/"><img src="../img/lastfm-logo.png" alt="lastfm" /></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer">
+			<img src="../img/xhtml_btn.png" alt="xhtml icon" />
+			<img src="../img/css_btn.gif" alt="css icon" />
+			<p>&copy;2014 Jordan Parra</p>
+		</div>
+	</body>
+</html>
