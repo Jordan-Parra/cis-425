@@ -71,35 +71,34 @@
 						
     		            <div class="form-group">
     		                <label for="name">Name:</label>
-    		                <input type="text" class="form-control" id="name" name="name"
+    		                <input type="text" class="message-control form-control" id="name" name="name"
     		                required
     		                autofocus
     		                pattern="[a-zA-Z' -]{4,30}"
     		                placeholder="Enter name"
-    		                title="Between 4-30 chars using uppercase/lowercase letters, hyphens, single quotation marks and/or spaces" />
+    		                title="Name: 4-30 chars (Use U/L case, spaces( ), hyphens(-), and single quotation marks(') only.)" />
     		            </div>
     		            <div class="form-group">
 							<label for="email">Email:</label>
-							<input type="email" class="form-control" id="email" name="email"
+							<input type="email" class="message-control form-control" id="email" name="email"
 							required  
 							pattern="^\S+@\S+$"
 							placeholder="Enter email"
-							title="Valid email address only!" />
+							title="Use a valid email address format." />
 						</div>
 						<div class="form-group">
 						    <label for="comments">Comments:</label>
-							<textarea class="form-control" id="comments" name="response" rows="5"  
+							<textarea class="message-control form-control" id="comments" name="response" rows="5"  
 							required 
 							maxlength="500"
 							placeholder="Enter comments"
-							onfocus="response_message();"></textarea>
+							title="Share your thoughts and concerns!"></textarea>
 						</div>
 						<input class="btn btn-default" type="reset" value="Clear">
 						<input class="btn btn-default pull-right" type="submit" value="Submit">
     		        </form>
-    		        <div class="text-center">
-    		        	<div id="messages"></div>
-    		        </div>
+    		        
+    		        <div class="text-center" id="messages"></div>
     		    </div>
     		    
     		    <!-- External Navigation -->

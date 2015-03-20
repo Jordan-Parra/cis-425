@@ -53,8 +53,11 @@ footer {
     padding-bottom: 10px;
 }
 
-select {
+#messages {
+    margin: 15px;
+}
 
+select {
 	background: #FFFFFF;
 }
 
