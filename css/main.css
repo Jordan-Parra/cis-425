@@ -1,0 +1,48 @@
+/*header {*/
+/*    text-align: center;*/
+/*}*/
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    margin: 10px 0px;
+}
+
+#external-nav-links img {
+    width: 64px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 0px;
+}
+
+footer {
+    margin: 20px 0 40px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+}
+
+.html5-logo, .email-logo {
+    width: 50px;
+    height: auto;
+}
+
+.css3-logo {
+    width: 40px;
+    height: auto;
+}
+
+.add-bottom-border {
+
+    border-bottom: 1px solid #eee;
+}
+
+.add-padding-top {
+    padding-top: 10px;
+}
+
+.add-padding-bottom {
+    padding-bottom: 10px;
+}
