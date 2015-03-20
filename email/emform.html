@@ -36,7 +36,7 @@
             <!-- Header -->
     		<header class="page-header">
     			<!--<h1>Jordan Parra <small>Assignment 5</small></h1>-->
-    			<h1>HTML Email Form <small>Jordan Parra</small></h1>
+    			<h1>HTML Email Form</h1>
     		</header>
     		
     		<div class="row">
@@ -74,7 +74,6 @@
     		                <input type="text" class="form-control" id="name" name="name"
     		                required
     		                autofocus
-    		                pattern="[a-zA-Z-' ]{4, 30}"
     		                placeholder="Enter name"
     		                title="Between 4-30 chars using uppercase/lowercase letters, hyphens, single quotation marks and/or spaces" />
     		            </div>
@@ -82,6 +81,7 @@
 							<label for="email">Email:</label>
 							<input type="email" class="form-control" id="email" name="email"
 							required  
+							pattern="^\S+@\S+$"
 							placeholder="Enter email"
 							title="Valid email address only!" />
 						</div>

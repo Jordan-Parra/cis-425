@@ -35,8 +35,7 @@
         <div class="container">
             <!-- Header -->
     		<header class="page-header">
-    			<!--<h1>Jordan Parra <small>Assignment 5</small></h1>-->
-    			<h1>Assignment 5 <small>Jordan Parra</small></h1>
+    			<h1>Assignment 5</h1>
     		</header>
     		
     		<div class="row">
@@ -113,26 +112,53 @@
 							title="Valid email address only!" 
 							onfocus="email_message();" />
 						</div>
+						<p><strong>What does your academic history look like?</strong></p>
 						<div class="checkbox">
-							<!--<label for="probation" class="label">Academic Probation?</label>-->
-							<label>
-							    Academic Probation?
-    							<input type="checkbox" id="probation" name="probation" value="true" 
-    							onfocus="probation_message();" />
-    						</label>
+						  <label>
+						    <input type="checkbox" value="">
+						    Dean's List Honors
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" value="">
+						    Study Abroad
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+						    <input type="checkbox" value="">
+						    Academic Probation
+						  </label>
+						</div>
+						<p><strong>Are you hot?</strong></p>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" value="option1" checked>
+						    Yes
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" value="option2">
+						    No
+						  </label>
+						</div>
+						<p><strong>Are you smart?</strong></p>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" value="option1" checked>
+						    Yes
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" value="option2">
+						    No
+						  </label>
 						</div>
 						<div>
-							<span class="label">Hot or Not?</span>
-							<label><input type="radio" name="hot" value="true" required title="Please select an option" onfocus="hot_yes_message()" /> Yes</label>
-							<label><input type="radio" name="hot" value="false" onfocus="hot_no_message()" /> No</label>
-						</div>
-						<div>
-							<span class="label">Smart or Not?</span>
-							<label><input type="radio" name="smart" value="true" required title="Please select an option" onfocus="smart_yes_message();" /> Yes</label> 
-							<label><input type="radio" name="smart" value="false" onfocus="smart_no_message();" /> No</label> 
-						</div>
-						<div>
-							<span class="label">Favorite Beer:</span> 
+							<span>Favorite Beer:</span> 
 							<select name="beer" required onfocus="beer_message();">
 								<option value="">Select a beer...</option>
 								<option value="blue-moon">Blue Moon</option>
@@ -140,17 +166,16 @@
 							<option value="kilt-lifter">Kilt Lifter</option>
 							</select>
 						</div>
-						<p>Why should I consider you for my study group?</p>
-						<div>
-							<textarea class="form-control" name="response" rows="5"  
+						<!--<p><strong>Why should I consider you for my study group?</strong></p>-->
+						<div class="form-group">
+							<label for="comments">Why should I consider you for my study group?</label>
+							<textarea class="form-control" id="comments" name="response" rows="5"  
 							required 
 							maxlength="500"
 							onfocus="response_message();"></textarea>
 						</div>
-						<div id="buttons">
-							<button type="submit" class="button">Sign me up!</button>
-							<button type="reset" class="button" onclick="giveFocus();">Clear the form!</button>
-						</div> 
+						<input class="btn btn-default" type="reset" value="Clear">
+						<input class="btn btn-default pull-right" type="submit" value="Submit">
 					</form>
     		    </div>
     		    

@@ -10,6 +10,12 @@ nav ul li {
     margin: 10px 0px;
 }
 
+.labels {
+    width: 200px;
+    /*display: block;*/
+    float: left;
+}
+
 #external-nav-links img {
     width: 64px;
     border: 2px solid black;
@@ -45,4 +51,41 @@ footer {
 
 .add-padding-bottom {
     padding-bottom: 10px;
+}
+
+select {
+
+	background: #FFFFFF;
+}
+
+select:required { background: #FFF79F; }
+
+select:valid { background: #FFFFFF; }
+
+select:focus:invalid { background: #FFA49F; }
+
+textarea {
+	background: #fff no-repeat top right;
+}
+
+textarea:required { background-image: url('../img/required.png'); }
+
+textarea:valid { background-image: url('../img/valid.png'); }
+
+textarea:focus:invalid { background-image: url('../img/invalid.png'); }
+
+input:not([type=submit]):not([type=checkbox]):not([type=reset]) {
+	background: #FFFFFF no-repeat top right;
+}
+
+input:not([type=submit]):not([type=checkbox]):required {
+	background-image: url('../img/required.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):valid {
+	background-image: url('../img/valid.png');
+}
+
+input:not([type=submit]):not([type=checkbox]):focus:invalid {
+	background-image: url('../img/invalid.png');
 }
