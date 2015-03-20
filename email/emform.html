@@ -65,7 +65,7 @@
     		        <form action="https://webapp4.asu.edu/pubtools/Mail" method="post">
     		            <!-- 3 hidden elements to process our emails -->
 						<!-- Change the email address to tarun before submitting for a grade! -->
-						<input name="sendto" type="hidden" value="tarun.goroware@asu.edu" />
+						<input name="sendto" type="hidden" value="tarun.gorowara@asu.edu" />
 						<input name="subject" type="hidden" value="CIS 425 Assignment 5 Email" />
 						<input name="location" type="hidden" value="http://cis425a.wpcarey.asu.edu/japarra4/email/emthankyou.html" />
 						
@@ -74,6 +74,7 @@
     		                <input type="text" class="form-control" id="name" name="name"
     		                required
     		                autofocus
+    		                pattern="[a-zA-Z' -]{4,30}"
     		                placeholder="Enter name"
     		                title="Between 4-30 chars using uppercase/lowercase letters, hyphens, single quotation marks and/or spaces" />
     		            </div>
@@ -96,6 +97,9 @@
 						<input class="btn btn-default" type="reset" value="Clear">
 						<input class="btn btn-default pull-right" type="submit" value="Submit">
     		        </form>
+    		        <div class="text-center">
+    		        	<div id="messages"></div>
+    		        </div>
     		    </div>
     		    
     		    <!-- External Navigation -->
