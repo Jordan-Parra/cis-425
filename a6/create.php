@@ -67,7 +67,7 @@
 							<li><a href="../a4/index.html">A4</a></li>
 							<li><a href="../a5/index.html">A5</a></li>
 							<li><a href="index.html">A6</a></li>
-							<li><a href="#">A7</a></li>
+							<li><a href="../a7/index.html">A7</a></li>
 							<li><a href="#">A8</a></li>
 							<li><a href="#">A9</a></li>
 							<li><a href="#">Project</a></li>

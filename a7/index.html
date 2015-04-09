@@ -2,20 +2,23 @@
 
 <!--
 	Jordan Parra
-	Assignment 5
+	Assignment 7
 	CIS-425
-	Fall 2014
+	Spring 2015
 -->
 
 <html lang="en">
     <head>
         <!-- Title -->
-        <title>Parra A5</title>
+        <title>Parra A7</title>
         
         <!-- Meta tag -->
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="http://s11.postimg.org/43i77irgv/favicon.png" />
         
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -35,7 +38,7 @@
         <div class="container">
             <!-- Header -->
     		<header class="page-header">
-    			<h1>Assignment 5</h1>
+    			<h1>Assignment 7</h1>
     		</header>
     		
     		<div class="row">
@@ -48,9 +51,9 @@
 							<li><a href="../a2/index.html">A2</a></li>
 							<li><a href="../a3/index.html">A3</a></li>
 							<li><a href="../a4/index.html">A4</a></li>
-							<li><a href="index.html">A5</a></li>
+							<li><a href="../a5/index.html">A5</a></li>
 							<li><a href="../a6/index.html">A6</a></li>
-							<li><a href="../a7/index.html">A7</a></li>
+							<li><a href="index.html">A7</a></li>
 							<li><a href="#">A8</a></li>
 							<li><a href="#">A9</a></li>
 							<li><a href="#">Project</a></li>
@@ -60,43 +63,51 @@
     		    
     		    <!-- Main Content -->
     		    <div class="col-md-6">
-    		        <h4><strong>Welcome Visitor!</strong></h4>
-    		        <p>Please sign up below to join my CIS-425 study group. Your personal information will be treated with respect.</p>
-					<h4 class="add-bottom-border add-padding-top add-padding-bottom">Sign Up:</h4>
+    		        <!--<h4><strong>Welcome Visitor!</strong></h4>-->
+    		        <!--<p>Please sign up below to join my CIS-425 study group. Your personal information will be treated with respect.</p>-->
+					<!--<p style="margin-top: 10px;">Sign up below to join my CIS-425 study group.</p>-->
+					<!--<p>Already have an account? <a href="login.php">Click here to login</a></p>-->
+					<!--<h3 style="margin-top: 10px;">Register</h3>-->
+					<!--<hr>-->
+					<div style="margin-top: 10px;">
+						<p>Already have an account? <a href="login.php">Click here to login</a></p>
+						<h3>Register</h3>
+					</div>
+					<hr>
 					<!-- Registration Form -->
 					<form id="registration_form" action="../confirm.htm" method="get">
-						<!-- Name -->
+					<!-- Name -->
 						<div class="form-group">
-							<label for="name">Name:</label>
+							<label for="name">Name</label>
 							<input type="text" class="form-control" id="name" name="name" 
 							required 
 							autofocus 
 							pattern="[a-zA-Z- ]{4,30}" 
-							placeholder="Enter name"
+							placeholder="Name"
 							title="Between 4-30 chars using uppercase/lowercase letters, hyphens, and/or spaces" 
 							onfocus="name_message();" />
 						</div>
 						<div class="form-group">
-							<label for="username">Username:</label>
+							<label for="username">Username</label>
 							<input type="text" class="form-control" id="username" name="username" 
 							required 
 							pattern="[\w!$-]{4,15}"
-							placeholder="Enter username"
+							placeholder="Username"
 							title="Between 4-15 chars using alphanumeric chars and/or special chars (i.e. -, _, !, $) only" 
 							onfocus="username_message();"/>
 						</div>
 						<div class="form-group">
-							<label for="password">Password:</label>
+							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" name="password" 
 							required
 							pattern="[\w!$-]{5,15}" 
 							onchange="form.re_password.pattern = this.value"
-							placeholder="Enter password"
+							placeholder="Password"
 							title="Between 5-15 chars using alphanumeric chars and/or special chars (i.e. -, _, !, $) only" 
 							onfocus="password_message();" />
 						</div>
 						<div class="form-group">
-							<label for="re_password">Confirm Password:</label>
+							<label for="re_password">Confirm Password</label>
 							<input type="password" class="form-control" id="re_password" name="re_password" 
 							required 
 							pattern="[\w!$-]{5,15}"
@@ -105,10 +116,10 @@
 							onfocus="confirm_password_message();" />
 						</div>
 						<div class="form-group">
-							<label for="email">Email Address:</label>
+							<label for="email">Email</label>
 							<input type="email" class="form-control" id="email" name="email"
 							required  
-							placeholder="Enter email"
+							placeholder="Email"
 							title="Valid email address only!" 
 							onfocus="email_message();" />
 						</div>
@@ -157,13 +168,13 @@
 						    No
 						  </label>
 						</div>
-						<div>
-							<span>Favorite Beer:</span> 
-							<select name="beer" required onfocus="beer_message();">
+						<div class="form-group">
+							<label class="control-label">Favorite Beer</label> 
+							<select class="form-control" id="beer" name="beer" required onfocus="beer_message();">
 								<option value="">Select a beer...</option>
 								<option value="blue-moon">Blue Moon</option>
 								<option value="shock-top">Shock Top</option>
-							<option value="kilt-lifter">Kilt Lifter</option>
+								<option value="kilt-lifter">Kilt Lifter</option>
 							</select>
 						</div>
 						<!--<p><strong>Why should I consider you for my study group?</strong></p>-->
@@ -172,11 +183,14 @@
 							<textarea class="form-control" id="comments" name="response" rows="5"  
 							required 
 							maxlength="500"
+							placeholder="Comments"
 							onfocus="response_message();"></textarea>
 						</div>
 						<input class="btn btn-default" type="reset" value="Clear">
-						<input class="btn btn-default pull-right" type="submit" value="Submit">
+						<input class="btn btn-primary pull-right" type="submit" value="Submit">
 					</form>
+					<hr>
+					<div id="messages"></div>
     		    </div>
     		    
     		    <!-- External Navigation -->

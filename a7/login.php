@@ -1,20 +1,28 @@
 <?php
-	session_start("cookie");
+	//
+	session_name("customer");
+	session_start("customer");
+	
+	if(isset($_SESSION["customer"]))
+	{
+		header('Location: welcome.php');
+		exit;
+	}
 ?>
 
 <!DOCTYPE html>
 
 <!--
 	Jordan Parra
-	Assignment 6
+	Assignment 7
 	CIS-425
-	Fall 2014
+	Spring 2015
 -->
 
 <html lang="en">
     <head>
         <!-- Title -->
-        <title>Parra A6: Check</title>
+        <title>Parra Login Page</title>
         
         <!-- Meta tag -->
 		<meta charset="utf-8" />
@@ -27,9 +35,11 @@
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         
+        <!--Font Awesome CSS-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="../css/main.css">
-        
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +53,7 @@
         <div class="container">
             <!-- Header -->
     		<header class="page-header">
-    			<h1>Assignment 6: Check</h1>
+    			<h1>Assignment 7</h1>
     		</header>
     		
     		<div class="row">
@@ -57,8 +67,8 @@
 							<li><a href="../a3/index.html">A3</a></li>
 							<li><a href="../a4/index.html">A4</a></li>
 							<li><a href="../a5/index.html">A5</a></li>
-							<li><a href="index.html">A6</a></li>
-							<li><a href="../a7/index.html">A7</a></li>
+							<li><a href="../a6/index.html">A6</a></li>
+							<li><a href="index.html">A7</a></li>
 							<li><a href="#">A8</a></li>
 							<li><a href="#">A9</a></li>
 							<li><a href="#">Project</a></li>
@@ -67,29 +77,66 @@
     		    </div>
     		    
     		    <!-- Main Content -->
-    		    <div class="col-md-8 main">
-    		        <div class="row">
-    		            <div style="text-align: center;" class="col-sm-12">
-                            <h3>Fun with Cookies!</h3>
-                            <p>Check Cookie Page</p>
-                            <div style="display: inline-block; " class="thumbnail">
-                                <img src="../img/cm4.jpg" alt="Picture of the cookie monster" />
-                                <div class="caption">
-                                    <a href="index.html" class="btn btn-default btn-block" role="button">Return to A6 Page</a>
-                                </div>
-                            </div>
-                            <p id="php">
-								<?php
-									// Check to see if cookie exists
-									if (isset($_COOKIE["user"])) {
-										echo "A cookie with the value of <span class=\"oreo\">" . $_COOKIE["user"] . "</span> has been detected.";
-									} else {
-										echo "No valid cookie in session for this browser.";
-									}
-								?>
-							</p>
-                        </div>
-    		        </div>
+    		    <div class="col-md-8">
+    		    	<div class="container-fluid">
+    		    		<div class="row">
+    		    			<div class="col-md-8 col-md-offset-2">
+    		    				<h3 style="margin-top: 10px;">Login</h3>
+    		    				<hr>
+								<?php if ($_GET["rc"] == 1): ?>
+									<div style="margin-top: 10px;" class="alert alert-danger alert-dismissable" role="alert">
+	    		    					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    		    						<span aria-hidden="true">&times;</span>
+	    		    					</button>
+	    		    					Username not found!
+	    		    				</div>
+								<?php endif; ?>
+								<?php if ($_GET["rc"] == 2): ?>
+									<div style="margin-top: 10px;" class="alert alert-danger alert-dismissable" role="alert">
+	    		    					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    		    						<span aria-hidden="true">&times;</span>
+	    		    					</button>
+	    		    					Password not found!
+	    		    				</div>
+								<?php endif; ?>
+								<?php if ($_GET["rc"] == 3): ?>
+									<div style="margin-top: 10px;" class="alert alert-info alert-dismissable" role="alert">
+	    		    					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    		    						<span aria-hidden="true">&times;</span>
+	    		    					</button>
+	    		    					Returned from process.php!
+	    		    				</div>
+								<?php endif; ?>
+								
+								<!-- Login Form -->
+								<form id="login-form" action="process.php" method="post" style="">
+									<div class="form-group">
+								        <label for="username">Username</label>
+								        <input type="text" class="form-control message-control" id="username" name="username"
+								        autofocus
+								        required
+								        pattern="[\w!$-]{4,15}"
+								        title="Username: 4-15 chars, numbers, u/l case letters and -, _, !, $ only" 
+								        placeholder="Username">
+								        <span class="help-block"></span>
+								    </div>
+									<div class="form-group">
+								        <label for="password">Password</label>
+								        <input type="password" class="message-control form-control" id="password" name="password"
+								        required
+								        pattern="[\w!$-]{5,15}" 
+								        title="Password: 5-15 chars, numbers, u/l case letters and -, _, !, $ only" 
+								        placeholder="Password">
+								        <span class="help-block"></span>
+								    </div>
+									<input class="btn btn-primary pull-right" type="submit" value="Login">
+									<input class="btn btn-default" type="reset" value="Clear" onclick="document.getElementById('username').focus();">
+								</form>
+								<hr>
+								<div id="messages"></div>
+							</div>
+						</div>
+					</div>
     		    </div>
     		    
     		    <!-- External Navigation -->

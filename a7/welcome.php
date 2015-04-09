@@ -1,20 +1,29 @@
 <?php
-	session_start("cookie");
+	//
+	session_name("customer");
+	session_start("customer");
+	
+	// 
+	if(!isset($_SESSION["customer"]))
+	{
+		header('Location: login.php');
+		exit;
+	}
 ?>
 
 <!DOCTYPE html>
 
 <!--
 	Jordan Parra
-	Assignment 6
+	Assignment 7
 	CIS-425
-	Fall 2014
+	Spring 2015
 -->
 
 <html lang="en">
     <head>
         <!-- Title -->
-        <title>Parra A6: Check</title>
+        <title>Parra Login Page</title>
         
         <!-- Meta tag -->
 		<meta charset="utf-8" />
@@ -30,7 +39,6 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         
-        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -43,7 +51,7 @@
         <div class="container">
             <!-- Header -->
     		<header class="page-header">
-    			<h1>Assignment 6: Check</h1>
+    			<h1>Assignment 7</h1>
     		</header>
     		
     		<div class="row">
@@ -57,8 +65,8 @@
 							<li><a href="../a3/index.html">A3</a></li>
 							<li><a href="../a4/index.html">A4</a></li>
 							<li><a href="../a5/index.html">A5</a></li>
-							<li><a href="index.html">A6</a></li>
-							<li><a href="../a7/index.html">A7</a></li>
+							<li><a href="../a6/index.html">A6</a></li>
+							<li><a href="index.html">A7</a></li>
 							<li><a href="#">A8</a></li>
 							<li><a href="#">A9</a></li>
 							<li><a href="#">Project</a></li>
@@ -67,29 +75,25 @@
     		    </div>
     		    
     		    <!-- Main Content -->
-    		    <div class="col-md-8 main">
-    		        <div class="row">
-    		            <div style="text-align: center;" class="col-sm-12">
-                            <h3>Fun with Cookies!</h3>
-                            <p>Check Cookie Page</p>
-                            <div style="display: inline-block; " class="thumbnail">
-                                <img src="../img/cm4.jpg" alt="Picture of the cookie monster" />
-                                <div class="caption">
-                                    <a href="index.html" class="btn btn-default btn-block" role="button">Return to A6 Page</a>
-                                </div>
-                            </div>
-                            <p id="php">
-								<?php
-									// Check to see if cookie exists
-									if (isset($_COOKIE["user"])) {
-										echo "A cookie with the value of <span class=\"oreo\">" . $_COOKIE["user"] . "</span> has been detected.";
-									} else {
-										echo "No valid cookie in session for this browser.";
-									}
-								?>
-							</p>
-                        </div>
-    		        </div>
+    		    <div class="col-md-8">
+    		    	<div class="container-fluid">
+    		    		<div class="row">
+    		    			<div class="col-md-8 col-md-offset-2">
+    		    				<div style="margin-top: 10px;" class="alert alert-success alert-dismissable" role="alert">
+    		    					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    		    						<span aria-hidden="true">&times;</span>
+    		    					</button>
+    		    					Login successful!
+    		    				</div>
+    		    				<h3 style="margin: 10px 0px 20px;">Welcome <?php echo $_SESSION["customer"] ?></h3>
+    		    				<hr>
+								<!--<p>Hello <?php echo $_SESSION["customer"] ?></p>-->
+								<form action="logout.php">
+									<button type="submit" class="btn btn-primary">Logout</button>
+								</form>
+							</div>
+						</div>
+					</div>
     		    </div>
     		    
     		    <!-- External Navigation -->
